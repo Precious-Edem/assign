@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/faviconV2_095.png" />
+    <title>Assignment</title>
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f2e4de;
+    }
+    .all-images .section-1 img {
+      height: 30%;
+      width: 30%;
+      margin: 70px;
+      filter: drop-shadow(8px 7px white);
+      display: inline-block;
+    }
+
+    .all-images .text {
+      width: 40%;
+      display: inline-block;
+      line-height: 1.5;
+      vertical-align: top;
+      padding-top: 6%;
+    }
+
+    .text h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #556945;
+    }
+
+    .navbar {
+      background-color: #556945;
+      height: 50px;
+      text-align: center;
+    }
+    .navbar li {
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding-top: 10px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn {
+      width: 100px;
+      height: 30px;
+      border: none;
+      color: red;
+      background-color: #556945;
+      margin-top: 2%;
+    }
+    .btn:hover {
+      background-color: #92b675;
+    }
+
+    .btn a {
+      text-decoration: none;
+      color: white;
+    }
+    .footer {
+      background-color: #556945;
+      height: 10vh;
+      margin-top: 120px;
+      text-align: center;
+      padding-top: 20px;
+      color: white;
+    }
+
+    .Newsletter {
+      background-color: white;
+      width: 30%;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 40%;
+      line-height: 2;
+      border-radius: 10px;
+      color: #556945;
+    }
+
+    .Newsletter input {
+      width: 300px;
+      height: 30px;
+      border: 1px solid red;
+    }
+    .Newsletter input:focus {
+      border: 1px solid red;
+      outline: none;
+    }
+    .Newsletter input:valid {
+      border: 2px solid green;
+    }
+
+    /* Base styles already included */
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 600px) {
+      .all-images .section-1 img {
+        height: 80%;
+        width: 80%;
+        margin: 20px;
+        filter: drop-shadow(4px 3px white);
+      }
+
+      .all-images .text {
+        width: 90%;
+        display: block;
+        padding-top: 10%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .navbar {
+        height: auto;
+        padding: 10px;
+      }
+      .navbar li {
+        display: block;
+        padding-top: 5px;
+      }
+      .navbar a {
+        padding: 10px;
+        display: block;
+      }
+
+      .btn {
+        width: 80px;
+        height: 25px;
+        margin-top: 5%;
+      }
+
+      .Newsletter {
+        margin-top: 25px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 10px;
+        font-size: 0.9em;
+      }
+
+      .Newsletter input {
+        width: 80%;
+        height: 25px;
+      }
+
+      .footer {
+        height: auto;
+        padding: 10px 0;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a href="/">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="all-images">
+      <div class="section-1">
+        <img src="/images/28998.jpg" alt="image 1" />
+        <div class="text">
+          <h1>ABOUT MORNING YOGA</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            sunt quam non, voluptatibus neque nulla sit laborum eum commodi,
+            blanditiis tempore, delectus illo doloribus. Consequatur eos quis
+            dicta quae ipsam! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Deserunt sunt quam non, voluptatibus neque nulla sit laborum
+            eum commodi, blanditiis tempore, delectus illo doloribus.
+            Consequatur eos quis dicta quae ipsam
+          </p>
+          <button class="btn"><a href="/">Read more</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="Newsletter">
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email here" id="email" required />
+        <p>Subscribe to our Newsletter for daily update</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Assignment from Lawpat HUB @2024</p>
+    </footer>
+  </body>
+</html>
